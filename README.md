@@ -9,8 +9,6 @@
 
 > You can view website here -> https://mykytamorar.netlify.com/
 
----
-
 **Operating procedure:**
 - Phase 1: Designing Homepage Cards & Card Grid Layout
 - Phase 2: Designing Footer & Blog Archive Page
@@ -41,6 +39,8 @@
 **Description of the creation process:**
 
 Firstly, I created a design for my main landing page, it is consisting of the navbar, featured a blog and all other blogs in the cells. In the navbar, there are buttons PZKS and NTUDP, which are links to website of the university and department; Contact button that is heads you to the contact page, where you can write an e-mail to me; Blog button and View More buttons are referring to blog archive, where all the blogs are stored. All of the blog images have a poping effect and all the buttons have a backlight when clicking on them. In the upper left corner, there is a logo button that redirects you to the home page.
+
+![](images/design.png)
 
 After the design process is finished, we can take a closer look at Contentful, which is a tool that I am going to use to make blogs on my website. As soon as Contentful gave permission to use free space I started creating content model, name of the model is Blog and it has thirteen fields, which are: title, featured image, slug, short description, featured, home, content, SEO title, SEO description, SEO image, SEO Author, SEO URL and SEO Keywords.
 
