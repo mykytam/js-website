@@ -40,8 +40,6 @@
 
 Firstly, I created a design for my main landing page, it is consisting of the navbar, featured a blog and all other blogs in the cells. In the navbar, there are buttons PZKS and NTUDP, which are links to website of the university and department; Contact button that is heads you to the contact page, where you can write an e-mail to me; Blog button and View More buttons are referring to blog archive, where all the blogs are stored. All of the blog images have a poping effect and all the buttons have a backlight when clicking on them. In the upper left corner, there is a logo button that redirects you to the home page.
 
-![](images/design.png)
-
 After the design process is finished, we can take a closer look at Contentful, which is a tool that I am going to use to make blogs on my website. As soon as Contentful gave permission to use free space I started creating content model, name of the model is Blog and it has thirteen fields, which are: title, featured image, slug, short description, featured, home, content, SEO title, SEO description, SEO image, SEO Author, SEO URL and SEO Keywords.
 
 Then, I started to making blogs (pages) for my website and filling them with images, text and other useful info. Here you can see an example of text filling into blog page:
@@ -54,7 +52,7 @@ Next step is installing software and additional plugins. Software that is used: 
 
 Now it is time to get into coding. Firstly. I am creating .env.development and .env.production files and writing there CONTENFUL_ACCESS_TOKEN, to pass variable without making it public. Also, in Gatsby-config.js file I require space id, to be able to make a website. I do this because I do not want these tokens to be easily accessed on GitHub.
 In the components folder, I create folder nav, which contains two flies, which are index.js and nav.js, where I am writing JS and CSS code for creating navigation bar my page. I am using <Link className{window.location.href}> to create links to different pages on my website.
-
+![](image/links.png)
 In the pages folder I have index.js file in which I import components of my website that has to be loaded into page.
 
 Secondly, I create Featured component, namely index.js and featured.css. In index.js I use static queries and graphQL. On the home page there will be home and featured components, and each one would have its own graphQl that it’s calling. So that home page doesn’t actually call any graphQl at all. So, it’s cool way to pass data through project. In the featured query there is allContentfulBlog, which goes straight from the Contentful source plugin. The source plug-in is going to look at all of the blogs that are in Contenful. In the file there is edges called, which I sall the edges or all the blogs. And in each edge is returning a node, I want to get the Id, slig, title, short despription, which are generated from Contentful.
